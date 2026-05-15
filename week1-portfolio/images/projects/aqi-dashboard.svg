@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">AQI prediction dashboard mockup</title>
+  <desc id="desc">A clean dashboard interface with AQI forecast cards, map panel, and air quality charts.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#172033" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="960" height="600" rx="32" fill="url(#bg)"/>
+  <circle cx="805" cy="92" r="130" fill="#fff" opacity=".13"/>
+  <circle cx="118" cy="512" r="170" fill="#fff" opacity=".09"/>
+  <rect x="86" y="72" width="788" height="456" rx="24" fill="#f8fafc" filter="url(#shadow)"/>
+  <rect x="118" y="108" width="178" height="384" rx="18" fill="#e8f1ff"/>
+  <circle cx="154" cy="148" r="16" fill="#2563eb"/>
+  <rect x="184" y="137" width="72" height="12" rx="6" fill="#172033"/>
+  <rect x="134" y="198" width="126" height="13" rx="6.5" fill="#8ba0bd"/>
+  <rect x="134" y="232" width="96" height="13" rx="6.5" fill="#8ba0bd"/>
+  <rect x="134" y="266" width="116" height="13" rx="6.5" fill="#8ba0bd"/>
+  <rect x="134" y="418" width="126" height="42" rx="14" fill="#2563eb"/>
+  <rect x="326" y="108" width="504" height="92" rx="18" fill="#fff"/>
+  <text x="356" y="152" fill="#172033" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">AQI Prediction</text>
+  <text x="356" y="180" fill="#5b667a" font-family="Inter, Arial, sans-serif" font-size="16">Next 24 hours forecast</text>
+  <rect x="684" y="132" width="108" height="42" rx="14" fill="#dbeafe"/>
+  <text x="715" y="160" fill="#1d4ed8" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800">Good</text>
+  <rect x="326" y="226" width="238" height="266" rx="18" fill="#fff"/>
+  <rect x="596" y="226" width="234" height="266" rx="18" fill="#fff"/>
+  <text x="356" y="266" fill="#172033" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">Pollution Trend</text>
+  <polyline points="356,422 394,376 432,388 470,318 508,342 536,286" fill="none" stroke="#2563eb" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="356,448 394,438 432,414 470,426 508,384 536,398" fill="none" stroke="#0f766e" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".7"/>
+  <line x1="356" y1="456" x2="536" y2="456" stroke="#d9e2ef" stroke-width="3"/>
+  <line x1="356" y1="308" x2="536" y2="308" stroke="#d9e2ef" stroke-width="3"/>
+  <text x="626" y="266" fill="#172033" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">City Sensors</text>
+  <rect x="626" y="296" width="174" height="150" rx="18" fill="#eef5ff"/>
+  <circle cx="696" cy="352" r="44" fill="#2563eb" opacity=".18"/>
+  <circle cx="696" cy="352" r="15" fill="#2563eb"/>
+  <circle cx="752" cy="394" r="11" fill="#0f766e"/>
+  <circle cx="660" cy="408" r="9" fill="#f97316"/>
+</svg>

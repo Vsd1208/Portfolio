@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Carbon aware VM placement mockup</title>
+  <desc id="desc">A cloud infrastructure interface showing regions, hosts, VMs, carbon intensity, and optimization status.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#020617" flood-opacity=".22"/>
+    </filter>
+  </defs>
+  <rect width="960" height="600" rx="32" fill="url(#bg)"/>
+  <rect x="86" y="74" width="788" height="452" rx="24" fill="#f8fafc" filter="url(#shadow)"/>
+  <rect x="120" y="112" width="214" height="374" rx="20" fill="#e8f1ff"/>
+  <text x="150" y="154" fill="#172033" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800">CIAVMP</text>
+  <text x="150" y="184" fill="#5b667a" font-family="Inter, Arial, sans-serif" font-size="15">Carbon-aware policy</text>
+  <rect x="150" y="232" width="154" height="48" rx="15" fill="#fff"/>
+  <rect x="150" y="302" width="154" height="48" rx="15" fill="#fff"/>
+  <rect x="150" y="372" width="154" height="48" rx="15" fill="#fff"/>
+  <circle cx="178" cy="256" r="10" fill="#0f766e"/>
+  <circle cx="178" cy="326" r="10" fill="#2563eb"/>
+  <circle cx="178" cy="396" r="10" fill="#f97316"/>
+  <rect x="372" y="112" width="466" height="166" rx="20" fill="#fff"/>
+  <text x="402" y="154" fill="#172033" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800">Region Allocation</text>
+  <g fill="none" stroke="#d9e2ef" stroke-width="4">
+    <path d="M486 220 C544 166 638 166 708 218"/>
+    <path d="M486 220 C560 256 642 256 708 218"/>
+  </g>
+  <circle cx="486" cy="220" r="28" fill="#0f766e"/>
+  <circle cx="598" cy="184" r="28" fill="#2563eb"/>
+  <circle cx="708" cy="218" r="28" fill="#f97316"/>
+  <rect x="372" y="310" width="466" height="176" rx="20" fill="#fff"/>
+  <text x="402" y="352" fill="#172033" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800">VM Placement Load</text>
+  <rect x="402" y="388" width="360" height="18" rx="9" fill="#e8f1ff"/>
+  <rect x="402" y="388" width="286" height="18" rx="9" fill="#2563eb"/>
+  <rect x="402" y="430" width="360" height="18" rx="9" fill="#e8f1ff"/>
+  <rect x="402" y="430" width="216" height="18" rx="9" fill="#0f766e"/>
+  <rect x="698" y="340" width="86" height="46" rx="14" fill="#dcfce7"/>
+  <text x="724" y="370" fill="#15803d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">-56%</text>
+</svg>

@@ -12,7 +12,7 @@ A responsive personal portfolio website for Vandanapu Sai Dhiraj, showcasing edu
 - Accessible navigation with ARIA attributes and keyboard support
 - Contact form with client-side validation
 - Hover, focus, and transition states for interactive elements
-- Local image assets for profile and project previews
+- Project UI mockup images with local social icons
 - CV-based profile content, project summaries, and contact links
 
 ## Technologies Used
@@ -34,10 +34,11 @@ week1-portfolio/
 |-- js/
 |   `-- navigation.js
 |-- images/
-|   |-- profile.jpg
-|   |-- project1.jpg
-|   |-- project2.jpg
-|   |-- project3.jpg
+|   |-- projects/
+|   |   |-- aqi-dashboard.svg
+|   |   |-- carbon-cloud.svg
+|   |   |-- ticket-chatbot.svg
+|   |   `-- voice-translator.svg
 |   `-- icons/
 |-- README.md
 `-- .gitignore
