@@ -1,8 +1,8 @@
-# Personal Portfolio Website
+# Vandanapu Sai Dhiraj Portfolio Website
 
 ## Project Description
 
-A responsive personal portfolio website showcasing skills, projects, and contact information. Built with semantic HTML5, organized CSS3, and basic JavaScript interactivity.
+A responsive personal portfolio website for Vandanapu Sai Dhiraj, showcasing education, technical skills, projects, and contact information. Built with semantic HTML5, organized CSS3, and basic JavaScript interactivity.
 
 ## Features
 
@@ -13,6 +13,7 @@ A responsive personal portfolio website showcasing skills, projects, and contact
 - Contact form with client-side validation
 - Hover, focus, and transition states for interactive elements
 - Local image assets for profile and project previews
+- CV-based profile content, project summaries, and contact links
 
 ## Technologies Used
 
@@ -47,11 +48,11 @@ week1-portfolio/
 1. Open the `week1-portfolio` folder in VS Code.
 2. Install helpful extensions such as Live Server, HTML CSS Support, and Prettier.
 3. Open `index.html` directly in a browser, or right-click it in VS Code and choose "Open with Live Server".
-4. Edit the name, contact details, skills, project descriptions, and social links in `index.html`.
+4. Edit the name, contact details, skills, project descriptions, and social links in `index.html` if future CV details change.
 
 ## Code Structure
 
-- `index.html` contains the full semantic page structure.
+- `index.html` contains the full semantic page structure and Sai Dhiraj's portfolio details.
 - `css/variables.css` defines reusable colors, fonts, spacing, shadows, and sizing values.
 - `css/style.css` contains base, layout, component, form, and interaction styles.
 - `css/responsive.css` contains mobile and tablet media queries.
