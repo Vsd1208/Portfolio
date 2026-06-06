@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive weather dashboard with live forecasts, city search, favorites, unit conversion, and local caching.">
+    <title>Weather Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/weather-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <main class="app-shell">
+        <header class="topbar">
+            <a class="brand" href="#" aria-label="Weather Dashboard home">
+                <span class="brand-mark weather-icon icon-partly" aria-hidden="true"></span>
+                <span>Atmos</span>
+            </a>
+            <div class="header-actions">
+                <button class="icon-button" id="shareButton" type="button" aria-label="Share this forecast" title="Share forecast">Share</button>
+                <button class="icon-button theme-button" id="themeButton" type="button" aria-label="Toggle color theme" title="Toggle color theme">
+                    <span id="themeLabel">Dark</span>
+                </button>
+            </div>
+        </header>
+
+        <section class="hero" aria-labelledby="pageTitle">
+            <p class="eyebrow">Week 4 Frontend Integration</p>
+            <h1 id="pageTitle">Weather that feels <em>clear.</em></h1>
+            <p class="hero-copy">Live conditions and a seven-day outlook, wherever you are headed.</p>
+
+            <form class="search-form" id="searchForm" autocomplete="off">
+                <label class="visually-hidden" for="searchInput">Search for a city</label>
+                <div class="search-wrap">
+                    <span class="search-symbol" aria-hidden="true">&#128269;</span>
+                    <input id="searchInput" type="search" placeholder="Search city or location" aria-autocomplete="list" aria-controls="suggestions" aria-expanded="false">
+                    <button class="search-button" type="submit">Search</button>
+                    <ul class="suggestions" id="suggestions" role="listbox"></ul>
+                </div>
+            </form>
+
+            <div class="quick-actions">
+                <button class="text-button" id="locationButton" type="button">&#9673; Use my location</button>
+                <div class="unit-toggle" role="group" aria-label="Temperature unit">
+                    <button class="unit-button active" type="button" data-unit="celsius">&deg;C</button>
+                    <button class="unit-button" type="button" data-unit="fahrenheit">&deg;F</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="status-panel hidden" id="statusPanel" role="status" aria-live="polite">
+            <span class="status-spinner" id="statusSpinner" aria-hidden="true"></span>
+            <div>
+                <strong id="statusTitle">Loading weather</strong>
+                <p id="statusMessage">Looking toward the horizon...</p>
+            </div>
+            <button class="retry-button hidden" id="retryButton" type="button">Try again</button>
+        </section>
+
+        <section class="weather-content hidden" id="weatherContent" aria-live="polite">
+            <article class="current-card">
+                <div class="current-heading">
+                    <div>
+                        <p class="overline">Current weather</p>
+                        <h2 id="locationName">--</h2>
+                        <p class="muted" id="updatedAt">--</p>
+                    </div>
+                    <button class="favorite-button" id="favoriteButton" type="button" aria-label="Add city to favorites" title="Add city to favorites">&#9734;</button>
+                </div>
+
+                <div class="current-main">
+                    <span class="weather-icon hero-icon" id="currentIcon" aria-hidden="true"></span>
+                    <div>
+                        <div class="temperature" id="currentTemp">--</div>
+                        <p class="condition" id="currentCondition">--</p>
+                    </div>
+                </div>
+
+                <div class="details-grid">
+                    <div class="detail"><span>Feels like</span><strong id="feelsLike">--</strong></div>
+                    <div class="detail"><span>Humidity</span><strong id="humidity">--</strong></div>
+                    <div class="detail"><span>Wind</span><strong id="wind">--</strong></div>
+                    <div class="detail"><span>Pressure</span><strong id="pressure">--</strong></div>
+                    <div class="detail"><span>Visibility</span><strong id="visibility">--</strong></div>
+                    <div class="detail"><span>UV index</span><strong id="uvIndex">--</strong></div>
+                </div>
+            </article>
+
+            <section class="forecast-section" aria-labelledby="forecastTitle">
+                <div class="section-heading">
+                    <div>
+                        <p class="overline">Plan ahead</p>
+                        <h2 id="forecastTitle">7-day forecast</h2>
+                    </div>
+                    <p class="cache-note" id="cacheNote"></p>
+                </div>
+                <div class="forecast-grid" id="forecastGrid"></div>
+            </section>
+
+            <section class="favorites-section" aria-labelledby="favoritesTitle">
+                <div class="section-heading">
+                    <div>
+                        <p class="overline">Quick access</p>
+                        <h2 id="favoritesTitle">Favorite places</h2>
+                    </div>
+                </div>
+                <div class="favorites-list" id="favoritesList"></div>
+                <p class="empty-favorites" id="emptyFavorites">Save a city with the star to see it here.</p>
+            </section>
+        </section>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/weatherService.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

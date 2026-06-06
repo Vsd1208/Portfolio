@@ -1,0 +1,28 @@
+@media (max-width: 1000px) {
+    .details-grid { grid-template-columns: repeat(3, 1fr); }
+    .forecast-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 650px) {
+    .app-shell { width: min(100% - 1rem, 1180px); padding-top: 0.75rem; }
+    .theme-button { padding-inline: 0.8rem; }
+    .hero { margin: 3.5rem auto 2rem; }
+    h1 { font-size: clamp(2.7rem, 15vw, 4rem); }
+    .search-wrap input { padding-right: 1rem; }
+    .search-button { position: static; width: 100%; margin-top: 0.65rem; }
+    .search-symbol { top: 1.2rem; }
+    .quick-actions { flex-wrap: wrap; }
+    .current-main { gap: 1rem; margin: 2rem 0; }
+    .hero-icon { width: 5rem; height: 5rem; transform: scale(1.2); margin-right: 0.5rem; }
+    .details-grid { grid-template-columns: repeat(2, 1fr); }
+    .forecast-grid { display: flex; overflow-x: auto; padding-bottom: 0.5rem; scroll-snap-type: x mandatory; }
+    .forecast-card { min-width: 8rem; scroll-snap-align: start; }
+    .section-heading { align-items: start; flex-direction: column; }
+}
+
+@media (max-width: 390px) {
+    .header-actions { gap: 0.4rem; }
+    .icon-button { padding-inline: 0.7rem; }
+    .current-main { align-items: flex-start; flex-direction: column; }
+    .details-grid { grid-template-columns: 1fr; }
+}
