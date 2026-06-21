@@ -1,0 +1,87 @@
+{
+  "info": {
+    "name": "Week 6 Blog Management API",
+    "description": "Postman collection for testing the Spring Boot blog API.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    }
+  ],
+  "item": [
+    {
+      "name": "List posts",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/posts?page=0&size=5&sort=createdAt,desc"
+      }
+    },
+    {
+      "name": "Create post",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"My First Blog Post\",\n  \"content\": \"This is my first post using Spring Boot.\",\n  \"author\": \"John Doe\",\n  \"categoryId\": 1\n}"
+        },
+        "url": "{{baseUrl}}/api/posts"
+      }
+    },
+    {
+      "name": "List categories",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/categories"
+      }
+    },
+    {
+      "name": "Create category",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Architecture\",\n  \"description\": \"System design and backend architecture\"\n}"
+        },
+        "url": "{{baseUrl}}/api/categories"
+      }
+    },
+    {
+      "name": "Create comment",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"content\": \"Helpful article.\",\n  \"author\": \"Reader One\",\n  \"postId\": 1\n}"
+        },
+        "url": "{{baseUrl}}/api/comments"
+      }
+    },
+    {
+      "name": "Approve comment",
+      "request": {
+        "method": "PATCH",
+        "url": "{{baseUrl}}/api/comments/1/approve"
+      }
+    }
+  ]
+}
